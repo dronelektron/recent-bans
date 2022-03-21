@@ -1,0 +1,19 @@
+"Phrases"
+{
+    "Recent bans"
+    {
+        "en"    "Recent bans"
+    }
+
+    "Ban not found"
+    {
+        "#format"   "{1:s}"
+        "en"    "Ban {1} not found"
+    }
+
+    "Player unbanned"
+    {
+        "#format"   "{1:s},{2:s}"
+        "en"    "{1} {2} unbanned"
+    }
+}

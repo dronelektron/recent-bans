@@ -1,0 +1,17 @@
+"Phrases"
+{
+    "Recent bans"
+    {
+        "ru"    "Недавние баны"
+    }
+
+    "Ban not found"
+    {
+        "ru"    "Бан {1} не найден"
+    }
+
+    "Player unbanned"
+    {
+        "ru"    "{1} {2} разбанен"
+    }
+}
