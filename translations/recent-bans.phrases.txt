@@ -5,6 +5,11 @@
         "en"    "Recent bans"
     }
 
+    "No bans yet"
+    {
+        "en"    "No bans yet"
+    }
+
     "Ban not found"
     {
         "#format"   "{1:s}"

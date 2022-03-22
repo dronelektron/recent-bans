@@ -3,7 +3,7 @@ void Command_Create() {
 }
 
 public Action Command_RecentBans(int client, int args) {
-    Menu_RecentBans(client);
+    UseCase_OpenRecentBansMenu(client);
 
     return Plugin_Handled;
 }

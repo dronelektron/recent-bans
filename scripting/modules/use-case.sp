@@ -34,3 +34,11 @@ void UseCase_RemoveBanInfo(int client, const char[] steamId) {
     BansList_Remove(banIndex);
     Message_ReplyBanRemoved(client, name, steamId);
 }
+
+void UseCase_OpenRecentBansMenu(int client) {
+    if (BansList_Size() == 0) {
+        Message_ReplyNoBansYet(client);
+    } else {
+        Menu_RecentBans(client);
+    }
+}
