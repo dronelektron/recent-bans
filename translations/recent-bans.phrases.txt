@@ -19,6 +19,6 @@
     "Player unbanned"
     {
         "#format"   "{1:s},{2:s}"
-        "en"    "{1} {2} unbanned"
+        "en"    "Player {1} {2} unbanned"
     }
 }
