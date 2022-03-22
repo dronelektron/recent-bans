@@ -22,7 +22,7 @@ void UseCase_RemoveBanInfo(int client, const char[] steamId) {
     int banIndex = BansList_FindBySteamId(steamId);
 
     if (banIndex == BAN_NOT_FOUND) {
-        Message_ReplyBanNotFound(client, steamId);
+        MessageReply_BanNotFound(client, steamId);
 
         return;
     }
@@ -32,12 +32,13 @@ void UseCase_RemoveBanInfo(int client, const char[] steamId) {
     BansList_GetPlayerName(banIndex, name);
     RemoveBan(steamId, BANFLAG_AUTHID);
     BansList_Remove(banIndex);
-    Message_ReplyBanRemoved(client, name, steamId);
+    MessageActivity_BanRemoved(client, name, steamId);
+    MessageLog_BanRemoved(client, name, steamId);
 }
 
 void UseCase_OpenRecentBansMenu(int client) {
     if (BansList_Size() == 0) {
-        Message_ReplyNoBansYet(client);
+        MessageReply_NoBansYet(client);
     } else {
         Menu_RecentBans(client);
     }
